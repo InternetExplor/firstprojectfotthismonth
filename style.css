@@ -135,17 +135,24 @@ a{
     background-color:#0026ff;
 }
 .agency_image_container{
-    z-index: 1;
+    position: relative;
+    z-index: 2;
     padding-top: 80px;
     padding-left: 30px;
 }
+.agency_decor_img{
+    position:relative;
+  
+
+    z-index:2 ;
+}
 .agency_decor{
-    display: flex;
+    
     position: absolute;
-    z-index: 2;
-    top: 80px;
-    right: 30px;
-    width: 339px;
+    z-index: 1;
+    top: 60px;
+    right: 50px;
+    width: 539px;
     height: 500px;
     background-color: #5ea6a859;
     border-top-left-radius: 300px;
@@ -227,7 +234,7 @@ a{
 .cathy{
     
     grid-area: cathy;
-    margin-top: 400px;
+    margin-top: 200px;
     position: relative;
     width: 100%;
     display: flex;
@@ -255,4 +262,104 @@ a{
 .cathy_svg{
     left: 0px;
     top: -10px;
+}
+.product_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: product;
+    width: 100%;
+    margin-top: 100px;
+    
+}
+.product{
+    width: 1296px;
+    height: 694px;  
+    background-image: url(/imgs/bg.png);
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-start;
+   justify-content: flex-start;
+   position: relative;
+   z-index: 1;
+}
+.product_text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 40px;
+    margin-left: 40px;
+    width: 575px;
+    height: 477px;
+}
+.product_text_title{
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 18px;
+    
+}
+.product_text_main{
+    width: 575px;
+    color: #FFFFFF;
+    font-size: 65px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+.product_text_button{
+    width: 220px;
+    height: 68px;
+    color: white ;
+    background-color:#FFFFFF26;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 50px;
+    border: 1px white solid;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    margin-top: 40px;
+}
+.product_img{
+    position: absolute;
+    z-index: 2;
+    top: 100px;
+    left: 505px;
+    width: 815px;
+    height: 691px;
+}
+.product_text_button:hover{
+    background-color:#ffffff5b;
+}
+.build_container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 300px;
+
+}
+.build_cards{
+    width: 636px;
+    height: 810px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start ;
+}
+.beliefs_card{
+    background-image: url(/imgs/bg\ 2.png);
+    background-repeat: no-repeat;
+}
+.build_card{
+    background-image: url(/imgs/bg\ \(1\).png);
+    background-repeat: no-repeat;
+}
+.beliefs_title{
+    font-weight: 400;
+    font-size: 18px;
+    color: #FFFFFF;
 }
