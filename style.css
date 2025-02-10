@@ -327,7 +327,7 @@ a{
     position: absolute;
     z-index: 2;
     top: 100px;
-    left: 505px;
+    left: 450px;
     width: 815px;
     height: 691px;
 }
@@ -335,31 +335,133 @@ a{
     background-color:#ffffff5b;
 }
 .build_container{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-top: 300px;
-
+    margin-top: 100px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px;
 }
-.build_cards{
-    width: 636px;
-    height: 810px;
+
+.beliefs_card{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start ;
-}
-.beliefs_card{
-    background-image: url(/imgs/bg\ 2.png);
+    align-items: center;
+    justify-content: safe;
+    background-image: url(/imgs/bg_2.png);
     background-repeat: no-repeat;
+    height: 810px;
+    width: 636px;
 }
-.build_card{
-    background-image: url(/imgs/bg\ \(1\).png);
-    background-repeat: no-repeat;
-}
+
 .beliefs_title{
     font-weight: 400;
     font-size: 18px;
     color: #FFFFFF;
+}
+.build_cards{
+    background-image: url(imgs/bg_\(1\).png);
+}
+.beliefs_title{
+    font-weight: 400;
+    font-size: 18px;
+}
+.card_title{
+    color:  #0066FF;    
+}
+.beliefs_main{
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 78px;
+    color:#ffffffb2;
+}
+.card_main{
+    color: black;
+}
+.beliefs_text{
+    color: #ffffffa9;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28.35px;
+    
+}
+.beliefs_btn{
+    width: 220px;
+    height: 68px;
+    color: white ;
+    background-color:#0066FF;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 50px;
+    border: none;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+.card_text{
+    color: #0e0d0dbb;
+}
+.founders_container{
+    margin-top: 130px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 6px;
+}
+.founders_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+.founders_bio{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 120px;
+    margin-top: 120px;
+}
+.founders_cards{
+    width: 416px;
+    height: 439px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #ff0000;
+}
+.founders_cards_img{
+width: 182px;
+height: 182px;
+
+}
+.founders_card_img{
+    width: 183px;
+    height: 183px;
+
+    position: relative;    
+    }
+.fouders_card_link{
+position: absolute;
+width: 60px;
+height: 60px;
+bottom: 10px;
+right: 10px;
+}
+.founders_text{
+    padding: 0;
+    margin: 0;
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 78px;
+    color: #000000;
+}
+.frs_2{
+    color: #00000094;
+    padding-right: 170px ;
+}
+.frs_3{
+    color: #00000042;
+    padding-left: 150px;
 }
